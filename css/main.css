@@ -1,0 +1,136 @@
+/*
+*	1. General 
+*	2. Main Canvas Drawing and Tooltip CSS Classes
+* 	3. Slide-in Option Panels & Their Components
+*/ 	
+
+
+
+
+
+
+
+/*
+	======================================================
+	===============		   1. General	   ===============
+	======================================================
+*/
+
+html, body {
+	height:100%;
+}
+
+body {
+	background-image: url("../img/footer_lodyas.png");
+}
+
+
+
+
+
+/*
+	======================================================
+	============		2. Main Canvas		  ============
+	============	 Drawing and Tooltips	  ============
+	======================================================
+*/
+
+#mandelbrot {
+	border:1px solid #000000;
+	margin:auto;
+	display: block;
+	margin-top:-4px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	-moz-box-shadow: 0px 0px 20px #000000;
+	-webkit-box-shadow: 0px 0px 20px #000000;
+	box-shadow: 0px 0px 20px #000000;
+
+}
+
+
+.Fractaltooltip {
+	position:absolute;
+	border:1px solid #333;
+	border-radius:5px;
+	padding:10px;
+	color:#fff;
+	font-size:12px Arial;
+	z-index: 999999;
+	background: #000;
+}
+
+
+
+.update {
+	position:absolute;
+	top:0;
+	left:0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	z-index: 9999999999999;
+
+}
+
+.update > .container {
+	background:#FFF;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: 1px solid #999;
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: 6px;
+	outline: 0;
+	-webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+	box-shadow: 0 3px 9px rgba(0,0,0,.5);
+	margin-top:-10%;
+	display:block;
+}
+
+.updateDrawing {
+	display:none;
+}
+
+
+
+
+/*
+	======================================================
+	============	  3. Slide-in Option      ============
+	============	  Panels & Components	  ============
+	======================================================
+*/
+
+
+.pane {
+	position: absolute;
+    width: 45%;
+    margin-top: -1000px;
+    right: 10px;
+}
+
+
+.pane > .col-md-12 {
+	background: RGBA(0,0,0,0.4);
+	padding: 20px;
+	border: 1px solid rgba(255,255,255,0.4);
+	border-radius: 15px;
+	color: #FFF;
+}
+
+
+#btnReset {
+	width:100%;
+}
+
+
+.graphics h2 {
+	width:100%;
+	text-align:center;
+}
+
+.graphics canvas {
+	width:100%;
+}
